@@ -452,6 +452,11 @@ nav .menu li.active:hover a{
 }
 
 
+main {overflow-x: hidden;}
+
+
+
+
 /* Hero */
 .hero{
   background-color: var(--color-font-lightgray);
@@ -955,6 +960,10 @@ nav .menu li.active:hover a{
   font-size: 14px;
 }
 
+
+
+
+
 footer {background-color: var(--color-section);}
 footer .buy-info {
   padding: 76px 0;
@@ -1011,9 +1020,7 @@ footer .breadcrumbs a.apple-logo {
   height: 16px;
   background-image: url("../images/path_apple.svg");
 }
-footer .breadcrumbs a:hover {
-  text-decoration: underline;
-}
+footer .breadcrumbs a:hover {text-decoration: underline;}
 footer .breadcrumbs a::after {
   content: "";
   width: 8px;
@@ -1025,10 +1032,10 @@ footer .breadcrumbs a::after {
   right: -18px;
   margin: auto;
 }
-footer .breadcrumbs a:last-child:after {display: none};
+footer .breadcrumbs a:last-child:after {display: none}
 
 
-footer .navigations {
+footer .navigation {
   margin-bottom: 40px;
   height: 344px;
   display: flex;
@@ -1036,19 +1043,50 @@ footer .navigations {
   flex-wrap: wrap;
   align-content: space-between;
 }
-footer .navigations .map {margin-top: 24px;}
-footer .navigations .map:nth-child(6) {padding-bottom: 100px;}
-footer .navigations .map h3 {
+footer .navigation .map {margin-top: 24px;}
+footer .navigation .map:nth-child(6) {padding-bottom: 100px;}
+footer .navigation .map h3 {
   font-size: 12px;
   font-weight: 600;
 }
-footer .navigations .map li {
+footer .navigation .map li {
   margin-top: 12px;
   font-size: 12px;
 }
-footer .navigations .map li a {color: var(--color-font-darkgray);}
-footer .navigations .map li a:hover {text-decoration: underline;}
+footer .navigation .map li a {color: var(--color-font-darkgray);}
+footer .navigation .map li a:hover {text-decoration: underline;}
 
+footer .how-to-shop {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-font-darkgray);
+}
+footer .how-to-shop a {color: var(--color-link);}
+footer .how-to-shop a:hover {text-decoration: underline;}
+
+footer .legal {
+  margin-top: 10px;
+  padding: 10px 0 40px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: 50px;
+  font-size: 12px;
+  color: var(--color-font-darkgray);
+}
+footer .legal ul {
+  flex-grow: 1;
+  display: flex;
+  gap: 20px;
+}
+footer .legal ul li {}
+footer .legal ul li::after {
+  content: "|";
+  position: absolute;
+  right: -11px;
+  color: var(--color-border);
+}
+footer .legal ul li:last-child::after {display: none;}
+footer .legal ul li:hover a {text-decoration: underline;}
 
 
 

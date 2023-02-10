@@ -114,7 +114,7 @@ ipads.forEach((ipad) => {
 
 
 //footer nav
-const navigationsEl = document.querySelector('footer .navigations');
+const navigationEl = document.querySelector('footer .navigation');
 navigations.forEach((nav) => {
   const mapEl = document.createElement('div');
   mapEl.classList.add('map');
@@ -129,5 +129,8 @@ navigations.forEach((nav) => {
     <ul>
       ${mapList}
     </ul>`
-  navigationsEl.append(mapEl);
+  navigationEl.append(mapEl);
 })
+
+const thisYearEl = document.querySelector('span.this-year');
+thisYearEl.textContent = new Date().getFullYear();
